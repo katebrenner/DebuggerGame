@@ -1,0 +1,225 @@
+body {
+  background-image: url("http://clipart-library.com/img/1753991.jpg");
+  font-family: 'Bungee', cursive;
+  cursor: none;
+}
+
+#newspaper {
+  position: relative;
+  background-image: url('https://content.mycutegraphics.com/graphics/fly/fly-swatter.png');
+  height: 150px;
+  width: 86px;
+  background-size: cover;
+  cursor: none;
+  margin: 0;
+  z-index: -1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+form {
+  text-align: center;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  visibility: hidden;
+  transition: height width 1s ease-in;
+}
+
+img:hover {
+  height: 120px;
+  width: 120px;
+}
+
+.playerName {
+  text-align: center;
+}
+
+.time {
+  text-align: center;
+}
+
+
+button {
+  font-family: 'Bungee', cursive;
+}
+
+.reset {
+  visibility: hidden;
+  display: block;
+  margin: 0 auto;
+}
+
+.flies {
+  visibility: hidden;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+#fly1 {
+  height: 100px;
+  width: 1000px;
+  animation-duration: 5s;
+  animation-name: circle;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /*animation-play-state: paused;*/
+}
+
+ #fly2 {
+  height: 100px;
+  width: 500px;
+  animation-duration: 5s;
+  animation-name: sideToSide;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /*animation-play-state: paused;*/
+}
+
+#fly3 {
+  height: 100px;
+  width: 1000px;
+  animation-duration: 5s;
+  animation-name: circle;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /*animation-play-state: paused;*/
+}
+
+#fly4 {
+  display: inline-block;
+  position: absolute;
+  height: 100px;
+  animation-duration: 5s;
+  animation-name: zigZag;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /*animation-play-state: paused;*/
+}
+
+#fly5 {
+  display: inline-block;
+  position: absolute;
+  height: 100px;
+  animation-duration: 5s;
+  animation-name: zigZag2;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.winCount {
+  font-size: 36px;
+  position: absolute;
+  top: 600px;
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sideToSide {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes zigZag {
+  from {
+    margin-left: 0%;
+    top: 50px;
+  }
+
+  to {
+    margin-left: 100%;
+    top: 500px;
+
+  }
+}
+
+@keyframes zigZag2 {
+  from {
+    margin-left: 0%;
+    top: 500px;
+  }
+
+  to {
+    margin-left: 100%;
+    top: 50px;
+
+  }
+}
+ @keyframes zigZagMedia {
+  from {
+    margin-left: 0%;
+    top: 20px;
+  }
+
+  to {
+    margin-left: 100%;
+    top: 250px;
+
+  }
+}
+
+@keyframes zigZag2Media {
+  from {
+    margin-left: 0%;
+    top: 250px;
+  }
+
+  to {
+    margin-left: 100%;
+    top: 20px;
+
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+    /* Styles go here */
+     #fly1{
+      animation-name: zigZagMedia;
+    }
+    #fly2 {
+      animation-name: zigZag2Media ;
+    }
+
+    #fly3 {
+      animation-name: sideToSide;
+/*      animation-direction: reverse;*/
+    }
+    #fly4 {
+     animation-name: zigZagMedia;
+     animation-direction: reverse;
+    }
+
+    #fly5 {
+      animation-name: sideToSide;
+    }
+
+    .winCount{
+      top: 500px;
+    }
+
+body {
+  color: white;
+}
+
