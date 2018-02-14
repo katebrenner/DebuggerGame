@@ -216,8 +216,7 @@ h2 {
   }
   body {
     color: white;
-    background-position: center;
-    background-size: cover;
+    background-size: contain;
   }
   #newspaper{
     display: none;
