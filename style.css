@@ -194,32 +194,32 @@ h2 {
 
 
 @media screen and (max-width: 1024px) {
-    /* Styles go here */
-     #fly1{
-      animation-name: zigZagMedia;
-    }
-    #fly2 {
-      animation-name: zigZag2Media ;
-    }
-
-    #fly3 {
-      animation-name: sideToSide;
-/*      animation-direction: reverse;*/
-    }
-    #fly4 {
-     animation-name: zigZagMedia;
-     animation-direction: reverse;
-    }
-
-    #fly5 {
-      animation-name: sideToSide;
-    }
-
-    .winCount{
-      top: 500px;
-    }
-
-body {
-  color: white;
-}
+  /* Styles go here */
+  #fly1{
+    animation-name: zigZagMedia;
+  }
+  #fly2 {
+    animation-name: zigZag2Media;
+  }
+  #fly3 {
+    animation-name: sideToSide;
+  }
+  #fly4 {
+    animation-name: zigZagMedia;
+    animation-direction: reverse;
+  }
+  #fly5 {
+    animation-name: sideToSide;
+  }
+  .winCount{
+    top: 500px;
+  }
+  body {
+    color: white;
+    background-position: center;
+    background-size: cover;
+  }
+  #newspaper{
+    display: none;
+  }
 }
